@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Error-Detection Chatbot</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="app-container">
+    <aside class="sidebar">
+      <div class="logo">Error-Detection <span>CHATBOT</span></div>
+      <button class="new-chat">+ New Chat</button>
+      <div class="spacer"></div>
+      <button class="upgrade-btn">✨ Upgrade to Plus</button>
+    </aside>
+
+    <main class="main-section">
+      <header class="top-bar">
+        <div class="model-selector">
+          <button>Model I</button>
+        </div>
+        <div class="top-controls">
+          <label class="toggle-switch">
+            <input type="checkbox">
+            <span class="slider">
+            </span>
+          </label>
+          <img class="profile-img" src="C:\Users\Dell\Downloads\istockphoto-1465545513-612x612.jpg" alt="Profile"/>
+        </div>
+      </header>
+
+      <section class="chat-area">
+        <div class="chat-placeholder">Error-Detection<br><span>CHATBOT</span></div>
+
+        <div class="student-info">
+          <p>Name: Kareem Hassan</p>
+          <p>ID: 223452</p>
+          <p>Major: CS</p>
+          <p>BUE</p>
+        </div>
+
+        <div class="suggestions">
+          <div class="suggestion">Send your code<br><small>for error detection</small></div>
+          <div class="suggestion">Explain why this code<br><small>is not working</small></div>
+          <div class="suggestion">Know more about this error<br><small>By knowing the description of the error</small></div>
+        </div>
+
+        <div id="chat-messages"></div>
+
+        <div class="chat-input">
+          <textarea id="user-input" placeholder="Enter your code here..." rows="4"></textarea>
+          <button id="send-btn" onclick="analyzeCode()">Analyze Code</button>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
